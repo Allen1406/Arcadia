@@ -523,3 +523,1173 @@
 .bounce{
     animation:bounce 2s infinite;
 }
+
+/* Loader */
+
+@keyframes loaderPulse{
+
+    0%{
+        transform:scale(.85);
+        opacity:.25;
+    }
+
+    50%{
+        transform:scale(1.1);
+        opacity:.7;
+    }
+
+    100%{
+        transform:scale(.85);
+        opacity:.25;
+    }
+
+}
+
+@keyframes loaderShine{
+
+    0%{
+        background-position:-300px;
+    }
+
+    100%{
+        background-position:300px;
+    }
+
+}
+
+@keyframes loaderRotate{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* RGB Flash */
+
+@keyframes rgbFlash{
+
+    0%{
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+    }
+
+}
+
+@keyframes rgbGlow{
+
+    0%{
+        filter:hue-rotate(0deg);
+    }
+
+    100%{
+        filter:hue-rotate(360deg);
+    }
+
+}
+
+/* CRT */
+
+@keyframes crtFlicker{
+
+    0%{
+        opacity:.08;
+    }
+
+    10%{
+        opacity:.15;
+    }
+
+    20%{
+        opacity:.09;
+    }
+
+    30%{
+        opacity:.18;
+    }
+
+    40%{
+        opacity:.12;
+    }
+
+    50%{
+        opacity:.15;
+    }
+
+    60%{
+        opacity:.1;
+    }
+
+    70%{
+        opacity:.18;
+    }
+
+    80%{
+        opacity:.13;
+    }
+
+    90%{
+        opacity:.16;
+    }
+
+    100%{
+        opacity:.08;
+    }
+
+}
+
+@keyframes glitch{
+
+    0%{
+        transform:translate(0);
+    }
+
+    20%{
+        transform:translate(-2px,2px);
+    }
+
+    40%{
+        transform:translate(2px,-2px);
+    }
+
+    60%{
+        transform:translate(-3px,1px);
+    }
+
+    80%{
+        transform:translate(3px,-1px);
+    }
+
+    100%{
+        transform:translate(0);
+    }
+
+}
+
+/* Blur Orbs */
+
+@keyframes orbFloatOne{
+
+    0%{
+        transform:translate(0,0);
+    }
+
+    50%{
+        transform:translate(80px,-70px);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+
+}
+
+@keyframes orbFloatTwo{
+
+    0%{
+        transform:translate(0,0);
+    }
+
+    50%{
+        transform:translate(-100px,60px);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+
+}
+
+@keyframes orbFloatThree{
+
+    0%{
+        transform:translate(0,0);
+    }
+
+    50%{
+        transform:translate(-60px,-90px);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+
+}
+
+/* Gradient */
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* Shine */
+
+@keyframes shine{
+
+    from{
+        left:-150%;
+    }
+
+    to{
+        left:150%;
+    }
+
+}
+
+/* Card Hover */
+
+@keyframes cardFloat{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes cardTilt{
+
+    0%{
+        transform:rotateX(0) rotateY(0);
+    }
+
+    50%{
+        transform:rotateX(3deg) rotateY(3deg);
+    }
+
+    100%{
+        transform:rotateX(0) rotateY(0);
+    }
+
+}
+
+@keyframes cardGlow{
+
+    0%{
+
+        box-shadow:
+        0 0 0 rgba(124,58,237,0);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 40px rgba(124,58,237,.35);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 0 rgba(124,58,237,0);
+
+    }
+
+}
+
+/* Video */
+
+@keyframes videoZoom{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* Scroll Reveal */
+
+@keyframes reveal{
+
+    from{
+
+        opacity:0;
+        transform:translateY(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes revealScale{
+
+    from{
+
+        opacity:0;
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+/* Utility Classes */
+
+.loader-pulse{
+    animation:loaderPulse 3s ease-in-out infinite;
+}
+
+.loader-shine{
+    animation:loaderShine 2s linear infinite;
+}
+
+.rgb-flash-animation{
+    animation:rgbFlash .8s ease;
+}
+
+.rgb-glow{
+    animation:rgbGlow 10s linear infinite;
+}
+
+.crt-flicker{
+    animation:crtFlicker .15s infinite;
+}
+
+.glitch{
+    animation:glitch .3s;
+}
+
+.orb-one{
+    animation:orbFloatOne 12s ease-in-out infinite;
+}
+
+.orb-two{
+    animation:orbFloatTwo 14s ease-in-out infinite;
+}
+
+.orb-three{
+    animation:orbFloatThree 16s ease-in-out infinite;
+}
+
+.gradient-move{
+    background-size:300% 300%;
+    animation:gradientMove 8s ease infinite;
+}
+
+.shine{
+    position:relative;
+    overflow:hidden;
+}
+
+.shine::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-150%;
+    width:70px;
+    height:100%;
+    background:rgba(255,255,255,.25);
+    transform:skewX(-25deg);
+    animation:shine 3s infinite;
+
+}
+
+.card-float{
+    animation:cardFloat 5s ease-in-out infinite;
+}
+
+.card-glow{
+    animation:cardGlow 2.5s infinite;
+}
+
+.card-tilt:hover{
+    animation:cardTilt .5s ease;
+}
+
+.video-zoom:hover video{
+    animation:videoZoom 8s linear infinite;
+}
+
+.reveal{
+    animation:reveal .9s ease forwards;
+}
+
+.reveal-scale{
+    animation:revealScale .8s ease forwards;
+}
+/* Gaming Pass */
+
+@keyframes passSlideIn{
+
+    from{
+        opacity:0;
+        transform:translateX(100%);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes passSlideOut{
+
+    from{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+    to{
+        opacity:0;
+        transform:translateX(100%);
+    }
+
+}
+
+/* Modal */
+
+@keyframes modalFadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes modalFadeOut{
+
+    from{
+        opacity:1;
+    }
+
+    to{
+        opacity:0;
+    }
+
+}
+
+@keyframes modalScaleIn{
+
+    from{
+        opacity:0;
+        transform:translateY(60px) scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}
+
+@keyframes modalScaleOut{
+
+    from{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+    to{
+        opacity:0;
+        transform:translateY(60px) scale(.9);
+    }
+
+}
+
+/* Success */
+
+@keyframes successPop{
+
+    0%{
+        transform:scale(.5);
+        opacity:0;
+    }
+
+    70%{
+        transform:scale(1.08);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+@keyframes successRing{
+
+    0%{
+        transform:scale(.7);
+        opacity:.8;
+    }
+
+    100%{
+        transform:scale(2.5);
+        opacity:0;
+    }
+
+}
+
+/* Coins */
+
+@keyframes coinDrop{
+
+    0%{
+        transform:translateY(-250px) rotate(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(900px) rotate(720deg);
+        opacity:0;
+    }
+
+}
+
+/* Confetti */
+
+@keyframes confetti{
+
+    0%{
+        transform:translateY(-120vh) rotate(0deg);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(120vh) rotate(720deg);
+        opacity:0;
+    }
+
+}
+
+/* Fireworks */
+
+@keyframes firework{
+
+    0%{
+        transform:scale(0);
+        opacity:1;
+    }
+
+    80%{
+        transform:scale(1.6);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(2.5);
+        opacity:0;
+    }
+
+}
+
+/* Achievement */
+
+@keyframes achievementUnlock{
+
+    0%{
+        transform:scale(.5) rotate(-12deg);
+        opacity:0;
+    }
+
+    60%{
+        transform:scale(1.12) rotate(6deg);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1) rotate(0);
+    }
+
+}
+
+/* XP */
+
+@keyframes xpFill{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:100%;
+    }
+
+}
+
+@keyframes xpGlow{
+
+    0%{
+        box-shadow:0 0 0 rgba(250,204,21,0);
+    }
+
+    50%{
+        box-shadow:0 0 25px rgba(250,204,21,.6);
+    }
+
+    100%{
+        box-shadow:0 0 0 rgba(250,204,21,0);
+    }
+
+}
+
+/* Dice */
+
+@keyframes diceShake{
+
+    0%{
+        transform:rotate(0);
+    }
+
+    20%{
+        transform:rotate(-18deg);
+    }
+
+    40%{
+        transform:rotate(18deg);
+    }
+
+    60%{
+        transform:rotate(-12deg);
+    }
+
+    80%{
+        transform:rotate(12deg);
+    }
+
+    100%{
+        transform:rotate(0);
+    }
+
+}
+
+/* Sparkles */
+
+@keyframes sparkle{
+
+    0%{
+        transform:scale(0);
+        opacity:0;
+    }
+
+    50%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(0);
+        opacity:0;
+    }
+
+}
+
+/* Ripple */
+
+@keyframes ripple{
+
+    from{
+        transform:scale(0);
+        opacity:.7;
+    }
+
+    to{
+        transform:scale(4);
+        opacity:0;
+    }
+
+}
+
+/* Toast */
+
+@keyframes toastIn{
+
+    from{
+        transform:translateX(120%);
+    }
+
+    to{
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes toastOut{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(120%);
+    }
+
+}
+
+/* Utility Classes */
+
+.pass-open{
+    animation:passSlideIn .45s ease forwards;
+}
+
+.pass-close{
+    animation:passSlideOut .4s ease forwards;
+}
+
+.modal-open{
+    animation:modalFadeIn .3s ease;
+}
+
+.modal-close{
+    animation:modalFadeOut .3s ease;
+}
+
+.modal-scale{
+    animation:modalScaleIn .4s ease;
+}
+
+.success-pop{
+    animation:successPop .7s cubic-bezier(.17,1.3,.48,1);
+}
+
+.success-ring{
+    animation:successRing 1.5s ease infinite;
+}
+
+.coin-drop{
+    animation:coinDrop 4s linear infinite;
+}
+
+.confetti{
+    animation:confetti 5s linear forwards;
+}
+
+.firework{
+    animation:firework 1.2s ease forwards;
+}
+
+.achievement{
+    animation:achievementUnlock .7s ease;
+}
+
+.xp-fill{
+    animation:xpFill 1.5s ease forwards;
+}
+
+.xp-glow{
+    animation:xpGlow 2s infinite;
+}
+
+.dice-shake:hover{
+    animation:diceShake .6s ease;
+}
+
+.sparkle{
+    animation:sparkle 2s infinite;
+}
+
+.ripple{
+    animation:ripple .8s ease-out;
+}
+
+.toast-in{
+    animation:toastIn .45s ease forwards;
+}
+
+.toast-out{
+    animation:toastOut .45s ease forwards;
+}
+/* Scroll */
+
+@keyframes scrollProgress{
+
+    from{
+        width:0%;
+    }
+
+    to{
+        width:100%;
+    }
+
+}
+
+@keyframes scrollArrow{
+
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+    50%{
+        transform:translateY(12px);
+        opacity:.5;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity:1;
+    }
+
+}
+
+/* Navbar */
+
+@keyframes navbarDrop{
+
+    from{
+        opacity:0;
+        transform:translateY(-100%);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes navbarBlur{
+
+    from{
+        backdrop-filter:blur(0);
+    }
+
+    to{
+        backdrop-filter:blur(20px);
+    }
+
+}
+
+/* Buttons */
+
+@keyframes buttonShine{
+
+    from{
+        left:-120%;
+    }
+
+    to{
+        left:120%;
+    }
+
+}
+
+@keyframes buttonGlow{
+
+    0%{
+        box-shadow:0 0 0 rgba(124,58,237,0);
+    }
+
+    50%{
+        box-shadow:
+        0 0 20px rgba(124,58,237,.35),
+        0 0 40px rgba(124,58,237,.25);
+    }
+
+    100%{
+        box-shadow:0 0 0 rgba(124,58,237,0);
+    }
+
+}
+
+/* Forms */
+
+@keyframes shake{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    20%{
+        transform:translateX(-10px);
+    }
+
+    40%{
+        transform:translateX(10px);
+    }
+
+    60%{
+        transform:translateX(-8px);
+    }
+
+    80%{
+        transform:translateX(8px);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes inputGlow{
+
+    0%{
+        box-shadow:0 0 0 rgba(124,58,237,0);
+    }
+
+    100%{
+        box-shadow:0 0 18px rgba(124,58,237,.35);
+    }
+
+}
+
+/* Skeleton */
+
+@keyframes skeleton{
+
+    0%{
+        background-position:-300px 0;
+    }
+
+    100%{
+        background-position:300px 0;
+    }
+
+}
+
+/* Typewriter */
+
+@keyframes typing{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:100%;
+    }
+
+}
+
+@keyframes blink{
+
+    50%{
+        border-color:transparent;
+    }
+
+}
+
+/* Wiggle */
+
+@keyframes wiggle{
+
+    0%{
+        transform:rotate(0);
+    }
+
+    20%{
+        transform:rotate(-8deg);
+    }
+
+    40%{
+        transform:rotate(8deg);
+    }
+
+    60%{
+        transform:rotate(-6deg);
+    }
+
+    80%{
+        transform:rotate(6deg);
+    }
+
+    100%{
+        transform:rotate(0);
+    }
+
+}
+
+/* Flip */
+
+@keyframes flip{
+
+    from{
+        transform:rotateY(0);
+    }
+
+    to{
+        transform:rotateY(180deg);
+    }
+
+}
+
+/* Background Pan */
+
+@keyframes backgroundPan{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* Float Particles */
+
+@keyframes particleFloat{
+
+    0%{
+        transform:translateY(0) translateX(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    80%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-220px) translateX(60px);
+        opacity:0;
+    }
+
+}
+
+/* Utility Classes */
+
+.scroll-progress-animation{
+    animation:scrollProgress 1s linear forwards;
+}
+
+.scroll-arrow{
+    animation:scrollArrow 2s infinite;
+}
+
+.navbar-drop{
+    animation:navbarDrop .5s ease;
+}
+
+.navbar-blur{
+    animation:navbarBlur .35s ease;
+}
+
+.button-glow{
+    animation:buttonGlow 2s infinite;
+}
+
+.button-shine{
+    position:relative;
+    overflow:hidden;
+}
+
+.button-shine::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:70px;
+    height:100%;
+    background:rgba(255,255,255,.18);
+    transform:skewX(-25deg);
+    animation:buttonShine 3s infinite;
+
+}
+
+.shake{
+    animation:shake .45s ease;
+}
+
+.input-glow{
+    animation:inputGlow .3s forwards;
+}
+
+.skeleton{
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.12),
+        rgba(255,255,255,.05)
+    );
+    background-size:300px 100%;
+    animation:skeleton 1.5s infinite linear;
+}
+
+.typewriter{
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:2px solid #fff;
+    animation:
+        typing 3s steps(30,end),
+        blink .8s infinite;
+}
+
+.wiggle:hover{
+    animation:wiggle .6s ease;
+}
+
+.flip{
+    animation:flip .8s ease;
+    transform-style:preserve-3d;
+}
+
+.background-pan{
+    background-size:200% 200%;
+    animation:backgroundPan 12s ease infinite;
+}
+
+.particle-float{
+    animation:particleFloat 5s linear infinite;
+}
