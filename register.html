@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Arcadia Gaming Week</title>
+
+    <link rel="icon" href="assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="background-blur blur-one"></div>
+
+    <div class="background-blur blur-two"></div>
+
+    <div class="background-blur blur-three"></div>
+
+    <div class="scroll-progress"></div>
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <img src="assets/images/logo.png" alt="Arcadia">
+
+            <span>
+
+                ARCADIA
+
+            </span>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="cart.html" class="hero-btn-outline">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="register-page">
+
+        <section class="register-hero">
+
+            <div class="container">
+
+                <span class="badge">
+
+                    🎮 Final Step
+
+                </span>
+
+                <h1 class="section-title">
+
+                    Complete Your
+
+                    <span>Registration</span>
+
+                </h1>
+
+                <p class="section-subtitle">
+
+                    Fill in your details carefully. After successful payment, your registration will be confirmed instantly.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="registration-section">
+
+            <div class="container">
+
+                <div class="registration-layout">
+
+                    <div class="registration-left">
+
+                        <form id="registrationForm">
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Full Name <span class="required">*</span>
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    placeholder="Enter your full name"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Phone Number <span class="required">*</span>
+
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    maxlength="10"
+                                    placeholder="9876543210"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    College Email <span class="required">*</span>
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="you@college.edu"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    College Name <span class="required">*</span>
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="college"
+                                    value="DYPSST"
+                                    required>
+
+                            </div>
+
+                                                        <div class="input-group">
+
+                                <label>
+
+                                    Year of Study <span class="required">*</span>
+
+                                </label>
+
+                                <select id="year" required>
+
+                                    <option value="">Select Year</option>
+
+                                    <option>First Year</option>
+
+                                    <option>Second Year</option>
+
+                                    <option>Third Year</option>
+
+                                    <option>Fourth Year</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>
+
+                                    Course Name <span class="required">*</span>
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="course"
+                                    placeholder="B.Tech AI & DS"
+                                    required>
+
+                            </div>
+
+                            <div class="input-group full-width">
+
+                                <label>
+
+                                    Selected Games
+
+                                </label>
+
+                                <div class="selected-summary">
+
+                                    <div id="selectedGamesSummary">
+
+                                        <!-- JS -->
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="input-group full-width">
+
+                                <label>
+
+                                    Payment Summary
+
+                                </label>
+
+                                <div class="payment-summary">
+
+                                    <div>
+
+                                        <span>
+
+                                            Total Payable
+
+                                        </span>
+
+                                    </div>
+
+                                    <strong id="paymentTotal">
+
+                                        ₹0
+
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="hero-btn">
+
+                                <i class="fa-solid fa-credit-card"></i>
+
+                                Proceed To Payment
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <aside class="registration-right">
+
+                        <div class="glass-card">
+
+                            <h2>
+
+                                Registration Summary
+
+                            </h2>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Games
+
+                                </span>
+
+                                <span id="gamesCount">
+
+                                    0
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Original Price
+
+                                </span>
+
+                                <span id="originalAmount">
+
+                                    ₹0
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Discount
+
+                                </span>
+
+                                <span id="discountAmount">
+
+                                    ₹0
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-divider"></div>
+
+                            <div class="summary-row total">
+
+                                <span>
+
+                                    Total
+
+                                </span>
+
+                                <span id="finalAmount">
+
+                                    ₹0
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                                                <div class="glass-card">
+
+                            <h2>
+
+                                Need Help?
+
+                            </h2>
+
+                            <p>
+
+                                If you face any issues during registration or payment, feel free to contact us.
+
+                            </p>
+
+                            <div class="support-details">
+
+                                <div>
+
+                                    <i class="fa-brands fa-whatsapp"></i>
+
+                                    <span>
+
+                                        +91 XXXXXXXXXX
+
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i class="fa-solid fa-envelope"></i>
+
+                                    <span>
+
+                                        fernandezallen234@gmail.com
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="glass-card">
+
+                            <h2>
+
+                                Event Details
+
+                            </h2>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Event
+
+                                </span>
+
+                                <span>
+
+                                    Arcadia
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Dates
+
+                                </span>
+
+                                <span>
+
+                                    19 - 25 July 2026
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Mode
+
+                                </span>
+
+                                <span>
+
+                                    Online
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Organizer
+
+                                </span>
+
+                                <span>
+
+                                    IEEE DYPSST SB
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <button class="back-to-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/app.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/discount.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+
+</html>
