@@ -1,0 +1,525 @@
+/* Fade Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Slide Animations*/
+
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes slideLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+/* Scale */
+
+@keyframes zoomIn {
+
+    from{
+        opacity:0;
+        transform:scale(.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@keyframes zoomOut{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(.85);
+    }
+
+}
+
+/* Floating */
+
+@keyframes floating {
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    25%{
+        transform:translateY(-10px);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    75%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@keyframes floatingSlow{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-30px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes floatingRotate{
+
+    0%{
+        transform:
+        translateY(0)
+        rotate(0deg);
+    }
+
+    50%{
+
+        transform:
+        translateY(-20px)
+        rotate(8deg);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(0)
+        rotate(0);
+
+    }
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    15%{
+
+        transform:scale(1.12);
+
+    }
+
+    30%{
+
+        transform:scale(.95);
+
+    }
+
+    45%{
+
+        transform:scale(1.08);
+
+    }
+
+    60%{
+
+        transform:scale(1);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Rotation */
+
+@keyframes rotate360{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes rotateBack{
+
+    from{
+
+        transform:rotate(360deg);
+
+    }
+
+    to{
+
+        transform:rotate(0deg);
+
+    }
+
+}
+
+/* Neon Glow */
+
+@keyframes neonGlow{
+
+    0%{
+
+        box-shadow:
+        0 0 5px #7C3AED,
+        0 0 15px #7C3AED;
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 15px #7C3AED,
+        0 0 40px #7C3AED,
+        0 0 70px #7C3AED;
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 5px #7C3AED,
+        0 0 15px #7C3AED;
+
+    }
+
+}
+
+@keyframes rgbBorder{
+
+    0%{
+
+        border-color:#7C3AED;
+
+    }
+
+    25%{
+
+        border-color:#06B6D4;
+
+    }
+
+    50%{
+
+        border-color:#EC4899;
+
+    }
+
+    75%{
+
+        border-color:#FACC15;
+
+    }
+
+    100%{
+
+        border-color:#7C3AED;
+
+    }
+
+}
+
+/* Text Glow */
+
+@keyframes textGlow{
+
+    0%{
+
+        text-shadow:
+        0 0 5px #7C3AED;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 10px #7C3AED,
+        0 0 20px #7C3AED,
+        0 0 40px #7C3AED;
+
+    }
+
+    100%{
+
+        text-shadow:
+        0 0 5px #7C3AED;
+
+    }
+
+}
+
+/* Button Pop */
+
+@keyframes buttonPop{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    40%{
+
+        transform:scale(1.12);
+
+    }
+
+    60%{
+
+        transform:scale(.96);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* Bounce */
+
+@keyframes bounce{
+
+    0%,20%,50%,80%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    40%{
+
+        transform:translateY(-22px);
+
+    }
+
+    60%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+/* Shimmer Effect */
+
+@keyframes shimmer{
+
+    0%{
+
+        background-position:-300px 0;
+
+    }
+
+    100%{
+
+        background-position:300px 0;
+
+    }
+
+}
+
+/* Hero Character Idle Animation */
+
+@keyframes heroIdle{
+
+    0%{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(-12px)
+        rotate(2deg);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+    }
+
+}
+
+/* Utility Animation Classes */
+
+.fade-in{
+    animation:fadeIn .8s ease forwards;
+}
+
+.slide-up{
+    animation:slideUp .8s ease forwards;
+}
+
+.slide-left{
+    animation:slideLeft .8s ease forwards;
+}
+
+.slide-right{
+    animation:slideRight .8s ease forwards;
+}
+
+.zoom-in{
+    animation:zoomIn .7s ease forwards;
+}
+
+.float{
+    animation:floating 4s ease-in-out infinite;
+}
+
+.float-slow{
+    animation:floatingSlow 8s ease-in-out infinite;
+}
+
+.hero-idle{
+    animation:heroIdle 4s ease-in-out infinite;
+}
+
+.neon{
+    animation:neonGlow 2s infinite;
+}
+
+.rgb-border{
+    animation:rgbBorder 6s linear infinite;
+}
+
+.text-glow{
+    animation:textGlow 2s infinite;
+}
+
+.pop:hover{
+    animation:buttonPop .4s ease;
+}
+
+.spin{
+    animation:rotate360 10s linear infinite;
+}
+
+.bounce{
+    animation:bounce 2s infinite;
+}

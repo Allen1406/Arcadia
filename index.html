@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arcadia '26 | IEEE SB DYPSST</title>
+
+    <link rel="icon" href="assets/logos/logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+    <div id="loader">
+
+        <h1>ARCADIA</h1>
+
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+
+        <p id="loadingText">
+            Loading...
+        </p>
+
+    </div>
+
+
+
+
+
+    <!-- PRESS START -->
+
+    <section id="startScreen">
+
+        <div class="overlay"></div>
+
+        <div class="start-content">
+
+            <p>IEEE Student Branch</p>
+
+            <h2>DYPSST</h2>
+
+            <h1>ARCADIA '26</h1>
+
+            <p>Level Up. Compete. Conquer.</p>
+
+            <button id="startBtn">
+
+                <i class="fa-solid fa-gamepad"></i>
+
+                PRESS START
+
+            </button>
+
+            <p class="mute-note">
+                🔇 Audio starts muted.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+
+<!-- MAIN WEBSITE -->
+
+    <main id="website">
+
+        <!-- NAVBAR -->
+
+        <header>
+
+            <div class="logo">
+
+                <img src="assets/logos/logo.png">
+
+                <span>ARCADIA</span>
+
+            </div>
+
+            <nav>
+
+                <a href="#">Home</a>
+                <a href="#games">Games</a>
+                <a href="#prizes">Prizes</a>
+                <a href="#timeline">Schedule</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <div class="nav-right">
+
+                <button id="themeDice">
+
+                    🎲
+
+                </button>
+
+                <button id="cartBtn">
+
+                    🛒
+
+                    <span id="cartCount">0</span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-left">
+
+                <h3>IEEE SB DYPSST Presents</h3>
+
+                <h1>
+
+                    ARCADIA '26
+
+                </h1>
+
+                <h2>
+
+                    Level Up.
+                    Compete.
+                    Conquer.
+
+                </h2>
+
+                <p>
+
+                    Join the biggest gaming week of the year.
+
+                    7 Days.
+
+                    7 Games.
+
+                    Exciting Cash Prizes.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button>
+
+                        Register Now
+
+                    </button>
+
+                    <button class="secondary">
+
+                        Explore Games
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <!-- Character Image -->
+
+                <img src="assets/images/hero.png">
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- COUNTDOWN -->
+
+        <section id="countdown">
+
+            <h2>
+
+                EVENT STARTS IN
+
+            </h2>
+
+            <div class="timer">
+
+                <div>
+
+                    <span id="days">00</span>
+
+                    <p>Days</p>
+
+                </div>
+
+                <div>
+
+                    <span id="hours">00</span>
+
+                    <p>Hours</p>
+
+                </div>
+
+                <div>
+
+                    <span id="minutes">00</span>
+
+                    <p>Minutes</p>
+
+                </div>
+
+                <div>
+
+                    <span id="seconds">00</span>
+
+                    <p>Seconds</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <h2>
+
+                About Arcadia
+
+            </h2>
+
+            <p>
+
+                Arcadia is IEEE Student Branch DYPSST's week-long gaming festival
+                where participants battle across seven competitive games for cash
+                prizes, achievements, and ultimate bragging rights.
+
+            </p>
+
+        </section>
+
+
+
+
+
+        <!-- GAMES -->
+
+        <section id="games">
+
+            <h2>
+
+                Choose Your Battle
+
+            </h2>
+
+            <div class="game-grid">
+
+                <!-- Cards will be inserted here -->
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- GAMING PASS -->
+
+        <section id="gamingPass">
+
+            <h2>
+
+                🎮 Your Gaming Pass
+
+            </h2>
+
+            <div id="passContainer">
+
+                <p>
+
+                    No games selected yet.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- PRIZE -->
+
+        <section id="prizes">
+
+            <h2>
+
+                Prize Pool
+
+            </h2>
+
+            <h1>
+
+                ₹3500
+
+            </h1>
+
+        </section>
+
+
+
+
+
+        <!-- TIMELINE -->
+
+        <section id="timeline">
+
+            <h2>
+
+                Event Schedule
+
+            </h2>
+
+            <div class="timeline">
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- FAQ -->
+
+        <section id="faq">
+
+            <h2>
+
+                Frequently Asked Questions
+
+            </h2>
+
+        </section>
+
+
+
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <h2>
+
+                Need Help?
+
+            </h2>
+
+            <a href="https://wa.me/91YOURNUMBER">
+
+                WhatsApp
+
+            </a>
+
+            <a href="mailto:fernandezallen234@gmail.com">
+
+                Email
+
+            </a>
+
+        </section>
+
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            © 2026 IEEE Student Branch DYPSST • Arcadia
+
+        </footer>
+
+    </main>
+
+
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/app.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+
+</html>
