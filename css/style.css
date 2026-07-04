@@ -1820,3 +1820,194 @@ header.scrolled .navbar{
 .toast.show{
     transform:translateX(0);
 }
+/* Focus States */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    outline:2px solid var(--cyan);
+    outline-offset:3px;
+}
+
+/* Active States */
+
+.btn:active,
+.hero-btn:active,
+.hero-btn-outline:active,
+.pass-btn:active,
+.start-btn:active,
+.lucky-dice:active,
+.sound-toggle:active,
+.menu-btn:active{
+    transform:scale(.96);
+}
+
+/* Container */
+
+.container{
+    width:min(1400px,92%);
+    margin:auto;
+}
+
+/* Utilities */
+
+.no-scroll{
+    overflow:hidden;
+}
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+.pointer-none{
+    pointer-events:none;
+}
+
+.pointer-auto{
+    pointer-events:auto;
+}
+
+.w-100{
+    width:100%;
+}
+
+.h-100{
+    height:100%;
+}
+
+.d-none{
+    display:none !important;
+}
+
+.d-block{
+    display:block;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.d-grid{
+    display:grid;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.flex-column{
+    flex-direction:column;
+}
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.relative{
+    position:relative;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.fixed{
+    position:fixed;
+}
+
+.text-white{
+    color:#fff;
+}
+
+.text-muted{
+    color:var(--text-muted);
+}
+
+.text-gradient{
+    background:var(--gradient-main);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.radius-sm{
+    border-radius:12px;
+}
+
+.radius-md{
+    border-radius:20px;
+}
+
+.radius-lg{
+    border-radius:30px;
+}
+
+.shadow-sm{
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.shadow-md{
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+}
+
+.shadow-lg{
+    box-shadow:0 30px 70px rgba(0,0,0,.45);
+}
+
+/* Loading States */
+
+.loading{
+    pointer-events:none;
+    opacity:.7;
+    user-select:none;
+}
+
+.loading::after{
+    content:"";
+    width:18px;
+    height:18px;
+    margin-left:10px;
+    border:2px solid rgba(255,255,255,.2);
+    border-top-color:#fff;
+    border-radius:50%;
+    display:inline-block;
+    animation:spin .8s linear infinite;
+}
+
+/* Disabled */
+
+.disabled{
+    opacity:.5;
+    pointer-events:none;
+    user-select:none;
+}
+
+/* Selection Lock */
+
+.no-select{
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+/* Image Helpers */
+
+.img-cover{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.img-contain{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
