@@ -1,0 +1,443 @@
+:root{
+
+    /* Brand */
+
+    --brand-name:"ARCADIA";
+
+    /* Fonts */
+
+    --heading-font:"Orbitron",sans-serif;
+    --body-font:"Poppins",sans-serif;
+    --subheading-font:"Rajdhani",sans-serif;
+    --number-font:"Orbitron",sans-serif;
+
+    /* Background */
+
+    --bg-primary:#07070B;
+    --bg-secondary:#0D1117;
+    --bg-tertiary:#161B22;
+    --bg-card:#1A1F29;
+    --bg-glass:rgba(255,255,255,.05);
+    --bg-glass-hover:rgba(255,255,255,.08);
+    --bg-input:rgba(255,255,255,.04);
+    --bg-overlay:rgba(7,7,11,.82);
+    --bg-modal:#11151C;
+    --bg-loader:#050507;
+
+    /* Brand Colors */
+
+    --purple:#7C3AED;
+    --purple-light:#9F67FF;
+    --purple-dark:#5B21B6;
+
+    --cyan:#06B6D4;
+    --cyan-light:#22D3EE;
+    --cyan-dark:#0891B2;
+
+    --pink:#EC4899;
+    --pink-light:#F472B6;
+    --pink-dark:#DB2777;
+
+    --blue:#2563EB;
+    --blue-light:#3B82F6;
+    --blue-dark:#1D4ED8;
+
+    --green:#22C55E;
+    --green-light:#4ADE80;
+    --green-dark:#16A34A;
+
+    --yellow:#FACC15;
+    --yellow-light:#FDE047;
+    --yellow-dark:#EAB308;
+
+    --orange:#F97316;
+    --red:#EF4444;
+    --white:#FFFFFF;
+    --black:#000000;
+
+    /* Text */
+
+    --text:#FFFFFF;
+    --text-light:#C7CDD8;
+    --text-muted:#8B949E;
+    --text-dark:#5F6B7A;
+    --text-success:#22C55E;
+    --text-danger:#EF4444;
+    --text-warning:#FACC15;
+    --text-info:#06B6D4;
+
+    /* Borders */
+
+    --border:rgba(255,255,255,.08);
+    --border-light:rgba(255,255,255,.05);
+    --border-dark:rgba(255,255,255,.12);
+    --border-purple:rgba(124,58,237,.28);
+    --border-cyan:rgba(6,182,212,.28);
+
+    /* Gradients */
+
+    --gradient-main:linear-gradient(
+        135deg,
+        #7C3AED,
+        #06B6D4
+    );
+
+    --gradient-purple:linear-gradient(
+        135deg,
+        #7C3AED,
+        #9F67FF
+    );
+
+    --gradient-cyan:linear-gradient(
+        135deg,
+        #06B6D4,
+        #22D3EE
+    );
+
+    --gradient-pink:linear-gradient(
+        135deg,
+        #EC4899,
+        #F472B6
+    );
+
+    --gradient-rainbow:linear-gradient(
+        90deg,
+        #7C3AED,
+        #06B6D4,
+        #22C55E,
+        #FACC15,
+        #EC4899
+    );
+
+    /* Shadows */
+
+    --shadow-xs:0 4px 10px rgba(0,0,0,.08);
+    --shadow-sm:0 8px 20px rgba(0,0,0,.15);
+    --shadow-md:0 15px 35px rgba(0,0,0,.25);
+    --shadow-lg:0 25px 60px rgba(0,0,0,.35);
+    --shadow-xl:0 35px 80px rgba(0,0,0,.45);
+
+    --shadow-purple:0 20px 45px rgba(124,58,237,.35);
+    --shadow-cyan:0 20px 45px rgba(6,182,212,.35);
+    --shadow-pink:0 20px 45px rgba(236,72,153,.35);
+    --shadow-green:0 20px 45px rgba(34,197,94,.35);
+    --shadow-yellow:0 20px 45px rgba(250,204,21,.35);
+    /* Glow */
+
+    --glow-purple:
+        0 0 10px rgba(124,58,237,.35),
+        0 0 30px rgba(124,58,237,.25);
+
+    --glow-cyan:
+        0 0 10px rgba(6,182,212,.35),
+        0 0 30px rgba(6,182,212,.25);
+
+    --glow-pink:
+        0 0 10px rgba(236,72,153,.35),
+        0 0 30px rgba(236,72,153,.25);
+
+    --glow-green:
+        0 0 10px rgba(34,197,94,.35),
+        0 0 30px rgba(34,197,94,.25);
+
+    --glow-yellow:
+        0 0 10px rgba(250,204,21,.35),
+        0 0 30px rgba(250,204,21,.25);
+
+    /* Border Radius */
+
+    --radius-xs:8px;
+    --radius-sm:12px;
+    --radius-md:18px;
+    --radius-lg:24px;
+    --radius-xl:30px;
+    --radius-2xl:40px;
+    --radius-round:50%;
+    --radius-pill:999px;
+
+    /* Spacing */
+
+    --space-4:4px;
+    --space-8:8px;
+    --space-12:12px;
+    --space-16:16px;
+    --space-20:20px;
+    --space-24:24px;
+    --space-30:30px;
+    --space-40:40px;
+    --space-50:50px;
+    --space-60:60px;
+    --space-70:70px;
+    --space-80:80px;
+    --space-100:100px;
+    --space-120:120px;
+
+    /* Container */
+
+    --container-width:1400px;
+    --container-padding:4%;
+    --navbar-width:94%;
+    --section-width:92%;
+
+    /* Blur */
+
+    --blur-xs:5px;
+    --blur-sm:10px;
+    --blur-md:18px;
+    --blur-lg:25px;
+    --blur-xl:40px;
+    --blur-2xl:70px;
+
+        /* Typography */
+
+    --font-size-xs:.75rem;
+    --font-size-sm:.875rem;
+    --font-size-md:1rem;
+    --font-size-lg:1.125rem;
+    --font-size-xl:1.25rem;
+    --font-size-2xl:1.5rem;
+    --font-size-3xl:2rem;
+    --font-size-4xl:2.5rem;
+    --font-size-5xl:3rem;
+    --font-size-6xl:4rem;
+    --font-size-7xl:5rem;
+    --font-size-8xl:6rem;
+
+    --font-weight-light:300;
+    --font-weight-regular:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+    --font-weight-extrabold:800;
+    --font-weight-black:900;
+
+    --line-height-xs:1;
+    --line-height-sm:1.2;
+    --line-height-md:1.5;
+    --line-height-lg:1.8;
+    --line-height-xl:2;
+
+    --letter-spacing-xs:.5px;
+    --letter-spacing-sm:1px;
+    --letter-spacing-md:2px;
+    --letter-spacing-lg:4px;
+    --letter-spacing-xl:8px;
+
+    /* Transition */
+
+    --transition-fast:.2s ease;
+    --transition-normal:.35s ease;
+    --transition-slow:.5s ease;
+    --transition-slower:.8s ease;
+
+    --transition-bounce:cubic-bezier(.175,.885,.32,1.275);
+    --transition-smooth:cubic-bezier(.4,0,.2,1);
+    --transition-sharp:cubic-bezier(.4,0,.6,1);
+
+    /* Z-Index */
+
+    --z-background:-10;
+    --z-overlay:100;
+    --z-header:1000;
+    --z-dropdown:1100;
+    --z-sticky:1200;
+    --z-drawer:1300;
+    --z-modal:2000;
+    --z-toast:3000;
+    --z-loader:9999;
+
+    /* Navbar */
+
+    --navbar-height:85px;
+    --navbar-scroll-height:65px;
+
+    /* Buttons */
+
+    --button-height-sm:45px;
+    --button-height-md:55px;
+    --button-height-lg:60px;
+    --button-height-xl:70px;
+
+    --button-padding-sm:0 18px;
+    --button-padding-md:0 24px;
+    --button-padding-lg:0 32px;
+    --button-padding-xl:0 40px;
+
+    /* Cards */
+
+    --card-padding:28px;
+    --card-gap:24px;
+    --card-border:1px solid rgba(255,255,255,.08);
+    --card-hover-scale:1.03;
+    --card-hover-translate:-8px;
+
+    /* Forms */
+
+    --input-height:56px;
+    --input-radius:14px;
+    --input-padding:16px 20px;
+    --input-border:1px solid rgba(255,255,255,.08);
+    --input-focus-border:rgba(124,58,237,.45);
+    --input-focus-shadow:0 0 18px rgba(124,58,237,.25);
+
+    /* Loader */
+
+    --loader-logo-size:110px;
+    --loader-bar-width:360px;
+    --loader-bar-height:8px;
+    --loader-bg:#050507;
+    --loader-duration:3s;
+
+    /* Hero */
+
+    --hero-min-height:100vh;
+    --hero-character-width:580px;
+    --hero-video-opacity:.12;
+    --hero-overlay-opacity:.88;
+
+    /* Countdown */
+
+    --countdown-card-width:170px;
+    --countdown-card-height:180px;
+    --countdown-number-size:4rem;
+
+    /* Gaming Pass */
+
+    --pass-width:430px;
+    --pass-header-height:75px;
+    --pass-radius:28px;
+
+    /* Registration */
+
+    --modal-width:720px;
+    --modal-radius:30px;
+    --modal-padding:40px;
+
+    /* Footer */
+
+    --footer-padding:90px;
+    --footer-gap:60px;
+
+    /* Scrollbar */
+
+    --scrollbar-width:12px;
+    --scrollbar-radius:50px;
+
+    /* Breakpoints */
+
+    --mobile-xs:360px;
+    --mobile:480px;
+    --tablet:768px;
+    --laptop:1024px;
+    --desktop:1280px;
+    --desktop-lg:1440px;
+
+    /* Animation Duration */
+
+    --duration-fast:.2s;
+    --duration-normal:.35s;
+    --duration-medium:.5s;
+    --duration-slow:.8s;
+    --duration-loader:3s;
+    --duration-float:5s;
+    --duration-gradient:8s;
+    --duration-rotate:10s;
+
+    /* Easing */
+
+    --ease-default:ease;
+    --ease-in:ease-in;
+    --ease-out:ease-out;
+    --ease-in-out:ease-in-out;
+    --ease-bounce:cubic-bezier(.175,.885,.32,1.275);
+    --ease-smooth:cubic-bezier(.4,0,.2,1);
+
+    /* Opacity */
+
+    --opacity-low:.08;
+    --opacity-medium:.15;
+    --opacity-high:.25;
+    --opacity-overlay:.75;
+
+        /* Theme Colors */
+
+    --theme-default:var(--purple);
+    --theme-fall-guys:#FF66C4;
+    --theme-deadshot:#EF4444;
+    --theme-uno:#2563EB;
+    --theme-mini-militia:#16A34A;
+    --theme-chess:#D4AF37;
+    --theme-minecraft:#22C55E;
+    --theme-bgmi:#F97316;
+
+    /* Game Specific */
+
+    --game-card-width:360px;
+    --game-card-height:500px;
+    --game-video-scale:1.08;
+    --game-overlay:linear-gradient(
+        to top,
+        rgba(7,7,11,.95),
+        rgba(7,7,11,.45),
+        transparent
+    );
+
+    /* Progress */
+
+    --progress-height:8px;
+    --progress-radius:999px;
+
+    /* Audio */
+
+    --audio-button-size:48px;
+
+    /* Lucky Dice */
+
+    --dice-size:48px;
+
+    /* Back To Top */
+
+    --backtop-size:58px;
+
+    /* Toast */
+
+    --toast-width:320px;
+    --toast-radius:18px;
+
+    /* Confetti */
+
+    --confetti-count:120;
+
+    /* Fireworks */
+
+    --firework-size:220px;
+
+    /* Coins */
+
+    --coin-size:24px;
+
+    /* Particle */
+
+    --particle-size:8px;
+
+    /* Icon */
+
+    --icon-sm:18px;
+    --icon-md:24px;
+    --icon-lg:32px;
+    --icon-xl:48px;
+
+    /* Image */
+
+    --logo-size:48px;
+    --hero-icon-size:55px;
+
+    /* Misc */
+
+    --cursor-size:280px;
+    --grid-size:40px;
+
+    --max-content-width:1600px;
+    --min-content-width:320px;
+
+}
