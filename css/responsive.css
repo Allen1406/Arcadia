@@ -1,0 +1,529 @@
+/* ==========================================
+   Large Desktop
+========================================== */
+
+@media (max-width:1400px){
+
+    .container{
+        width:94%;
+    }
+
+    .hero{
+        gap:60px;
+        padding:130px 6% 90px;
+    }
+
+    .hero-character{
+        max-width:560px;
+    }
+
+    .hero-title{
+        font-size:5.8rem;
+    }
+
+    .hero-stats{
+        gap:18px;
+    }
+
+    .games-grid{
+        grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+    }
+
+    .footer-content{
+        grid-template-columns:1.2fr 1fr 1fr 1fr;
+        gap:45px;
+    }
+
+}
+
+/* ==========================================
+   Laptop
+========================================== */
+
+@media (max-width:1200px){
+
+    .navbar{
+        width:96%;
+    }
+
+    .nav-links{
+        gap:8px;
+    }
+
+    .nav-links a{
+        padding:10px 12px;
+        font-size:.92rem;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:70px;
+        padding-top:150px;
+    }
+
+    .hero-left{
+        margin:auto;
+    }
+
+    .hero-description{
+        margin-inline:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-stats{
+        grid-template-columns:repeat(2,1fr);
+        max-width:650px;
+        margin:70px auto 0;
+    }
+
+    .hero-right{
+        order:-1;
+    }
+
+    .hero-character{
+        max-width:500px;
+    }
+
+    .about-container{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .about-content{
+        text-align:center;
+    }
+
+    .about-description{
+        max-width:750px;
+        margin-inline:auto;
+    }
+
+    .games-grid{
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    }
+
+    .gaming-pass{
+        width:390px;
+    }
+
+    .footer-content{
+        grid-template-columns:repeat(2,1fr);
+        gap:45px;
+    }
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width:992px){
+
+    .section-title{
+        font-size:3rem;
+    }
+
+    .section-subtitle{
+        font-size:1rem;
+    }
+
+    .countdown-wrapper{
+        gap:20px;
+    }
+
+    .countdown-card{
+        width:160px;
+        height:170px;
+    }
+
+    .countdown-value{
+        font-size:3.2rem;
+    }
+
+    .games-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .game-card{
+        height:470px;
+    }
+
+    .gaming-pass{
+        width:370px;
+    }
+
+    .registration-modal{
+        width:92%;
+        padding:35px;
+    }
+
+    #registrationForm{
+        grid-template-columns:1fr;
+    }
+
+    .input-group.full-width,
+    .selected-summary,
+    .payment-summary,
+    #registrationForm .hero-btn{
+        grid-column:auto;
+    }
+
+    .success-modal{
+        width:92%;
+        padding:35px;
+    }
+
+    .success-details{
+        grid-template-columns:1fr;
+    }
+
+    .footer{
+        padding:80px 0 35px;
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-logo,
+    .footer-social{
+        justify-content:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+/* ==========================================
+   Mobile Landscape
+========================================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:14px 20px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .hero{
+        padding:130px 20px 80px;
+    }
+
+    .hero-title{
+        font-size:4rem;
+        letter-spacing:2px;
+    }
+
+    .hero-tagline{
+        font-size:1.5rem;
+    }
+
+    .hero-description{
+        font-size:.96rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-buttons .hero-btn,
+    .hero-buttons .hero-btn-outline{
+        width:100%;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .hero-character{
+        max-width:380px;
+    }
+
+    .about{
+        padding:90px 20px;
+    }
+
+    .about-title{
+        font-size:2.5rem;
+    }
+
+    .about-stats{
+        grid-template-columns:1fr;
+    }
+
+    .countdown{
+        padding:90px 20px;
+    }
+
+    .countdown-wrapper{
+        justify-content:center;
+    }
+
+    .countdown-card{
+        width:145px;
+        height:155px;
+    }
+
+    .games-section{
+        padding:90px 20px;
+    }
+
+    .games-grid{
+        grid-template-columns:1fr;
+    }
+
+    .game-card{
+        height:460px;
+    }
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width:576px){
+
+    html{
+        font-size:15px;
+    }
+
+    .section-heading{
+        margin-bottom:50px;
+    }
+
+    .section-title{
+        font-size:2.3rem;
+        line-height:1.2;
+    }
+
+    .section-subtitle{
+        font-size:.92rem;
+    }
+
+    .hero{
+        min-height:auto;
+        gap:45px;
+        padding:120px 18px 70px;
+    }
+
+    .hero-title{
+        font-size:3rem;
+        letter-spacing:1px;
+    }
+
+    .hero-tagline{
+        font-size:1.2rem;
+    }
+
+    .hero-description{
+        font-size:.92rem;
+        line-height:1.8;
+    }
+
+    .hero-character{
+        max-width:300px;
+    }
+
+    .hero-badge{
+        font-size:.8rem;
+        padding:8px 16px;
+    }
+
+    .hero-stat{
+        padding:18px;
+    }
+
+    .hero-stat h2{
+        font-size:2rem;
+    }
+
+    .countdown-title{
+        font-size:2rem;
+    }
+
+    .countdown-wrapper{
+        gap:15px;
+    }
+
+    .countdown-card{
+        width:135px;
+        height:145px;
+        border-radius:22px;
+    }
+
+    .countdown-value{
+        font-size:2.5rem;
+    }
+
+    .countdown-label{
+        font-size:.75rem;
+    }
+
+    .about-title{
+        font-size:2rem;
+    }
+
+    .about-description{
+        font-size:.92rem;
+    }
+
+    .stat-card{
+        padding:22px;
+    }
+
+    .game-card{
+        height:430px;
+    }
+
+    .game-content{
+        padding:22px;
+    }
+
+    .game-content h3{
+        font-size:1.6rem;
+    }
+
+    .game-details{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .gaming-pass{
+        width:100%;
+        right:-100%;
+    }
+
+    .pass-header{
+        padding:22px;
+    }
+
+    .pass-summary,
+    .achievement-box,
+    .discount-banner,
+    .pass-progress,
+    .combo-reward,
+    .recommended-game,
+    .pass-stats{
+        margin-left:18px;
+        margin-right:18px;
+    }
+
+    .checkout-btn{
+        width:calc(100% - 36px);
+        margin:0 18px 20px;
+    }
+
+    .registration-modal,
+    .success-modal{
+        padding:28px 22px;
+        border-radius:24px;
+    }
+
+    .success-icon{
+        width:95px;
+        height:95px;
+        font-size:3rem;
+    }
+
+    .success-buttons{
+        flex-direction:column;
+    }
+
+    .success-buttons button{
+        width:100%;
+    }
+
+    .community-card{
+        padding:22px;
+    }
+
+    .footer{
+        margin-top:80px;
+    }
+
+    .footer-content{
+        gap:35px;
+    }
+
+    .footer-bottom{
+        margin-top:45px;
+    }
+
+    .back-to-top{
+        width:50px;
+        height:50px;
+        right:20px;
+        bottom:20px;
+    }
+
+}
+
+/* ==========================================
+   Small Mobile
+========================================== */
+
+@media (max-width:380px){
+
+    html{
+        font-size:14px;
+    }
+
+    .hero-title{
+        font-size:2.5rem;
+    }
+
+    .hero-character{
+        max-width:240px;
+    }
+
+    .countdown-card{
+        width:120px;
+        height:130px;
+    }
+
+    .countdown-value{
+        font-size:2.1rem;
+    }
+
+    .game-card{
+        height:400px;
+    }
+
+    .game-content{
+        padding:18px;
+    }
+
+    .pass-item{
+        padding:14px;
+    }
+
+    .pass-item-icon{
+        width:44px;
+        height:44px;
+    }
+
+    .registration-modal,
+    .success-modal{
+        padding:22px 18px;
+    }
+
+}

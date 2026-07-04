@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaming Pass | Arcadia</title>
+
+    <link rel="icon" href="assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="background-blur blur-one"></div>
+    <div class="background-blur blur-two"></div>
+    <div class="background-blur blur-three"></div>
+
+    <div class="scroll-progress"></div>
+
+    <header class="cart-header">
+
+        <div class="container">
+
+            <a href="index.html" class="logo">
+
+                <img src="assets/images/logo.png" alt="Arcadia">
+
+                <span>ARCADIA</span>
+
+            </a>
+
+            <div class="cart-header-right">
+
+                <button class="sound-toggle">
+
+                    <i class="fa-solid fa-volume-xmark"></i>
+
+                </button>
+
+                <a href="index.html" class="hero-btn-outline">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="cart-page">
+
+        <section class="cart-hero">
+
+            <div class="container">
+
+                <div class="cart-title">
+
+                    <span class="badge">
+
+                        🎮 Gaming Pass
+
+                    </span>
+
+                    <h1>
+
+                        Build Your Gaming Pass
+
+                    </h1>
+
+                    <p>
+
+                        Review your selected games, unlock combo discounts and proceed to registration.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cart-layout">
+
+            <div class="container">
+
+                <div class="cart-wrapper">
+
+                    <div class="cart-left">
+
+                        <div class="selected-games-card">
+
+                            <div class="card-header">
+
+                                <h2>
+
+                                    Selected Games
+
+                                </h2>
+
+                                <span id="gameCount">
+
+                                    0 Games
+
+                                </span>
+
+                            </div>
+
+                            <div id="cartItems">
+
+                                <!-- JS -->
+
+                            </div>
+
+                        </div>
+
+                                            </div>
+
+                    <aside class="cart-right">
+
+                        <div class="order-summary">
+
+                            <h2>
+
+                                Order Summary
+
+                            </h2>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Games Selected
+
+                                </span>
+
+                                <span id="summaryGames">
+
+                                    0
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Original Price
+
+                                </span>
+
+                                <span id="originalPrice">
+
+                                    ₹0
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+
+                                    Combo Discount
+
+                                </span>
+
+                                <span id="discountPrice">
+
+                                    ₹0
+
+                                </span>
+
+                            </div>
+
+                            <div class="summary-divider"></div>
+
+                            <div class="summary-row total">
+
+                                <span>
+
+                                    Total Payable
+
+                                </span>
+
+                                <span id="finalPrice">
+
+                                    ₹0
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="achievement-box">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                            <h3 id="achievementTitle">
+
+                                Rookie Gamer
+
+                            </h3>
+
+                            <p id="achievementText">
+
+                                Add more games to unlock combo rewards.
+
+                            </p>
+
+                        </div>
+
+                        <div class="discount-banner" id="discountBanner">
+
+                            <i class="fa-solid fa-tags"></i>
+
+                            <div>
+
+                                <h4>
+
+                                    Combo Discount Available
+
+                                </h4>
+
+                                <p>
+
+                                    Register for 4 or more games and save more.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="pass-progress">
+
+                            <div class="pass-progress-header">
+
+                                <span>
+
+                                    Gamer Progress
+
+                                </span>
+
+                                <span id="progressText">
+
+                                    0 / 7
+
+                                </span>
+
+                            </div>
+
+                            <div class="pass-progress-bar">
+
+                                <div class="pass-progress-fill" id="progressFill"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="combo-reward">
+
+                            <i class="fa-solid fa-fire"></i>
+
+                            <div>
+
+                                <h4>
+
+                                    Gamer Pack Bonus
+
+                                </h4>
+
+                                <p id="comboRewardText">
+
+                                    Select 4 games to unlock your first combo reward.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <button id="continueRegistration" class="hero-btn">
+
+                            Continue Registration
+
+                        </button>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <section class="support-section">
+
+            <div class="container">
+
+                <div class="support-card">
+
+                    <div class="support-icon">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                    </div>
+
+                    <div class="support-content">
+
+                        <h2>
+
+                            Need Help?
+
+                        </h2>
+
+                        <p>
+
+                            Facing any issue during registration or payment? Reach out to us anytime.
+
+                        </p>
+
+                        <div class="support-details">
+
+                            <div>
+
+                                <i class="fa-brands fa-whatsapp"></i>
+
+                                <span>
+
+                                    +91 XXXXXXXXXX
+
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <span>
+
+                                    fernandezallen234@gmail.com
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <button class="back-to-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/gamingPass.js"></script>
+    <script src="js/discount.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+
+</html>
