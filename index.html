@@ -2,67 +2,129 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Arcadia '26 | IEEE SB DYPSST</title>
+    <title>ARCADIA '26 | IEEE SB DYPSST</title>
 
-    <link rel="icon" href="assets/logos/logo.png">
+    <meta name="description"
+        content="Arcadia '26 - IEEE Student Branch DYPSST Gaming Week | 7 Days | 7 Games | Cash Prizes">
+
+    <meta name="keywords"
+        content="Arcadia, IEEE, DYPSST, Gaming Week, BGMI, Minecraft, Chess, Fall Guys">
+
+    <meta name="author" content="IEEE Student Branch DYPSST">
+
+    <meta name="theme-color" content="#07070B">
+
+    <link rel="icon" href="assets/logos/favicon.png">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
 
-<!-- LOADER -->
+    <div class="bg-blur">
+
+        <span class="blur-orb"></span>
+        <span class="blur-orb"></span>
+        <span class="blur-orb"></span>
+
+    </div>
+
+    <div class="crt"></div>
+
+    <div class="rgb-flash"></div>
+
+    <div class="mouse-glow"></div>
+
+    <!-- Loader -->
 
     <div id="loader">
 
-        <h1>ARCADIA</h1>
+        <img src="assets/logos/ieee-logo.png" alt="IEEE Logo" class="loader-logo">
 
-        <div class="loading-bar">
-            <div class="loading-progress"></div>
+        <h1 class="loader-title">
+            ARCADIA
+        </h1>
+
+        <p class="loader-subtitle">
+            IEEE Student Branch DYPSST
+        </p>
+
+        <div class="loader-bar">
+
+            <div class="loader-progress" id="loaderProgress"></div>
+
         </div>
 
-        <p id="loadingText">
-            Loading...
+        <h3 class="loader-percent" id="loaderPercent">
+            0%
+        </h3>
+
+        <p class="loader-tip" id="loaderTip">
+
+            Loading your next adventure...
+
         </p>
 
     </div>
 
-
-
-
-
-    <!-- PRESS START -->
+    <!-- Press Start -->
 
     <section id="startScreen">
 
-        <div class="overlay"></div>
+        <div class="start-wrapper">
 
-        <div class="start-content">
+            <img src="assets/logos/ieee-logo.png" alt="IEEE Logo" class="start-logo">
 
-            <p>IEEE Student Branch</p>
+            <p class="start-college">
 
-            <h2>DYPSST</h2>
+                IEEE Student Branch
 
-            <h1>ARCADIA '26</h1>
+            </p>
 
-            <p>Level Up. Compete. Conquer.</p>
+            <h2 class="start-college">
 
-            <button id="startBtn">
+                DYPSST
+
+            </h2>
+
+            <h1 class="start-title">
+
+                ARCADIA '26'
+
+            </h1>
+
+            <p class="start-tagline">
+
+                LEVEL UP • COMPETE • CONQUER
+
+            </p>
+
+            <button class="start-btn" id="startBtn">
 
                 <i class="fa-solid fa-gamepad"></i>
 
@@ -70,116 +132,242 @@
 
             </button>
 
-            <p class="mute-note">
-                🔇 Audio starts muted.
+            <p class="start-note">
+
+                Audio is muted by default.
+
             </p>
 
         </div>
 
     </section>
 
+    <!-- Main Website -->
 
-
-
-
-<!-- MAIN WEBSITE -->
-
-    <main id="website">
-
-        <!-- NAVBAR -->
+    <main id="app">
 
         <header>
 
-            <div class="logo">
+            <div class="navbar">
 
-                <img src="assets/logos/logo.png">
+                <a href="#" class="logo">
 
-                <span>ARCADIA</span>
+                    <img src="assets/logos/ieee-logo.png" alt="IEEE">
 
-            </div>
+                    <div class="logo-text">
 
-            <nav>
+                        <h2 class="logo-title">
 
-                <a href="#">Home</a>
-                <a href="#games">Games</a>
-                <a href="#prizes">Prizes</a>
-                <a href="#timeline">Schedule</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
+                            ARCADIA
 
-            </nav>
+                        </h2>
 
-            <div class="nav-right">
+                        <span class="logo-subtitle">
 
-                <button id="themeDice">
+                            IEEE SB DYPSST
 
-                    🎲
+                        </span>
 
-                </button>
+                    </div>
 
-                <button id="cartBtn">
+                </a>
 
-                    🛒
+                <nav class="nav-links">
 
-                    <span id="cartCount">0</span>
+                    <a href="#home" class="active">
 
-                </button>
+                        Home
+
+                    </a>
+
+                    <a href="#about">
+
+                        About
+
+                    </a>
+
+                    <a href="#games">
+
+                        Games
+
+                    </a>
+
+                    <a href="#prizes">
+
+                        Prizes
+
+                    </a>
+
+                    <a href="#schedule">
+
+                        Schedule
+
+                    </a>
+
+                    <a href="#faq">
+
+                        FAQ
+
+                    </a>
+
+                    <a href="#contact">
+
+                        Contact
+
+                    </a>
+
+                </nav>
+
+                <div class="nav-actions">
+
+                    <button class="sound-toggle">
+
+                        <i class="fa-solid fa-volume-xmark"></i>
+
+                    </button>
+
+                    <button class="lucky-dice">
+
+                        🎲
+
+                    </button>
+
+                    <button class="pass-btn" id="passBtn">
+
+                        <i class="fa-solid fa-ticket"></i>
+
+                        Gaming Pass
+
+                        <span class="pass-count">
+
+                            0
+
+                        </span>
+
+                    </button>
+
+                    <button class="menu-btn">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
 
             </div>
 
         </header>
+                <!-- Hero -->
 
+        <section class="hero" id="home">
 
+            <div class="hero-video">
 
+                <video autoplay muted loop playsinline>
 
+                    <source src="assets/videos/hero-bg.mp4" type="video/mp4">
 
-        <!-- HERO -->
+                </video>
 
-        <section class="hero">
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-icons">
+
+                <img src="assets/icons/controller.png" class="hero-icon" alt="">
+                <img src="assets/icons/chess.png" class="hero-icon" alt="">
+                <img src="assets/icons/minecraft.png" class="hero-icon" alt="">
+                <img src="assets/icons/bgmi.png" class="hero-icon" alt="">
+                <img src="assets/icons/uno.png" class="hero-icon" alt="">
+
+            </div>
 
             <div class="hero-left">
 
-                <h3>IEEE SB DYPSST Presents</h3>
+                <div class="hero-badge">
 
-                <h1>
+                    <i class="fa-solid fa-trophy"></i>
 
-                    ARCADIA '26
+                    IEEE Student Branch DYPSST Presents
+
+                </div>
+
+                <h1 class="hero-title">
+
+                    ARCADIA
+
+                    <span>'26</span>
 
                 </h1>
 
-                <h2>
+                <h2 class="hero-tagline">
 
-                    Level Up.
-                    Compete.
-                    Conquer.
+                    The Ultimate Gaming Week
 
                 </h2>
 
-                <p>
+                <p class="hero-description">
 
-                    Join the biggest gaming week of the year.
-
-                    7 Days.
-
-                    7 Games.
-
-                    Exciting Cash Prizes.
+                    Enter the arena where strategy meets skill. Battle across seven
+                    competitive games, unlock exclusive achievements, win exciting
+                    cash prizes and become the ultimate Arcadia Champion.
 
                 </p>
 
                 <div class="hero-buttons">
 
-                    <button>
+                    <a href="#games" class="hero-btn">
 
-                        Register Now
-
-                    </button>
-
-                    <button class="secondary">
+                        <i class="fa-solid fa-play"></i>
 
                         Explore Games
 
+                    </a>
+
+                    <button class="hero-btn-outline" id="openPass">
+
+                        <i class="fa-solid fa-ticket"></i>
+
+                        Gaming Pass
+
                     </button>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+
+                        <h2>7</h2>
+
+                        <p>Games</p>
+
+                    </div>
+
+                    <div class="hero-stat">
+
+                        <h2>7</h2>
+
+                        <p>Days</p>
+
+                    </div>
+
+                    <div class="hero-stat">
+
+                        <h2>₹3500</h2>
+
+                        <p>Prize Pool</p>
+
+                    </div>
+
+                    <div class="hero-stat">
+
+                        <h2>60+</h2>
+
+                        <p>Expected Players</p>
+
+                    </div>
 
                 </div>
 
@@ -187,248 +375,1007 @@
 
             <div class="hero-right">
 
-                <!-- Character Image -->
+                <div class="hero-character">
 
-                <img src="assets/images/hero.png">
-
-            </div>
-
-        </section>
-
-
-
-
-
-        <!-- COUNTDOWN -->
-
-        <section id="countdown">
-
-            <h2>
-
-                EVENT STARTS IN
-
-            </h2>
-
-            <div class="timer">
-
-                <div>
-
-                    <span id="days">00</span>
-
-                    <p>Days</p>
-
-                </div>
-
-                <div>
-
-                    <span id="hours">00</span>
-
-                    <p>Hours</p>
-
-                </div>
-
-                <div>
-
-                    <span id="minutes">00</span>
-
-                    <p>Minutes</p>
-
-                </div>
-
-                <div>
-
-                    <span id="seconds">00</span>
-
-                    <p>Seconds</p>
+                    <img src="assets/images/gamer.png" alt="Arcadia Character">
 
                 </div>
 
             </div>
 
+            <div class="scroll-indicator">
+
+                <span>
+
+                    Scroll Down
+
+                </span>
+
+                <div class="scroll-wheel"></div>
+
+            </div>
+
         </section>
 
+        <!-- Countdown -->
 
+        <section class="countdown" id="countdown">
 
+            <h2 class="countdown-title">
 
-
-        <!-- ABOUT -->
-
-        <section id="about">
-
-            <h2>
-
-                About Arcadia
+                Event Begins In
 
             </h2>
 
-            <p>
+            <p class="countdown-subtitle">
 
-                Arcadia is IEEE Student Branch DYPSST's week-long gaming festival
-                where participants battle across seven competitive games for cash
-                prizes, achievements, and ultimate bragging rights.
+                Get your squad ready. Arcadia officially begins on
+                <strong>19th July 2026</strong>.
 
             </p>
 
-        </section>
+            <div class="countdown-wrapper">
 
+                <div class="countdown-card">
 
+                    <h2 class="countdown-value" id="days">
 
+                        00
 
+                    </h2>
 
-        <!-- GAMES -->
+                    <p class="countdown-label">
 
-        <section id="games">
+                        Days
 
-            <h2>
+                    </p>
 
-                Choose Your Battle
+                </div>
 
-            </h2>
+                <div class="countdown-card">
 
-            <div class="game-grid">
+                    <h2 class="countdown-value" id="hours">
 
-                <!-- Cards will be inserted here -->
+                        00
+
+                    </h2>
+
+                    <p class="countdown-label">
+
+                        Hours
+
+                    </p>
+
+                </div>
+
+                <div class="countdown-card">
+
+                    <h2 class="countdown-value" id="minutes">
+
+                        00
+
+                    </h2>
+
+                    <p class="countdown-label">
+
+                        Minutes
+
+                    </p>
+
+                </div>
+
+                <div class="countdown-card">
+
+                    <h2 class="countdown-value" id="seconds">
+
+                        00
+
+                    </h2>
+
+                    <p class="countdown-label">
+
+                        Seconds
+
+                    </p>
+
+                </div>
 
             </div>
 
         </section>
 
+        <!-- About -->
 
+        <section class="about" id="about">
 
+            <div class="about-container">
 
+                <div class="about-content">
 
-        <!-- GAMING PASS -->
+                    <div class="badge">
 
-        <section id="gamingPass">
+                        About Arcadia
 
-            <h2>
+                    </div>
 
-                🎮 Your Gaming Pass
+                    <h2 class="about-title">
 
-            </h2>
+                        Welcome to
 
-            <div id="passContainer">
+                        <span>Arcadia '26</span>
 
-                <p>
+                    </h2>
 
-                    No games selected yet.
+                    <p class="about-description">
+
+                        Arcadia is IEEE Student Branch DYPSST's flagship gaming festival
+                        bringing together gamers, creators and enthusiasts for an
+                        unforgettable week of competitive action.
+
+                    </p>
+
+                    <p class="about-description">
+
+                        Compete in seven exciting titles, build your Gaming Pass,
+                        unlock achievement badges, enjoy combo discounts and battle
+                        for a total prize pool of ₹3500.
+
+                    </p>
+
+                </div>
+
+                <div class="about-stats">
+
+                    <div class="stat-card">
+
+                        <h2 class="stat-number">
+
+                            7
+
+                        </h2>
+
+                        <h3 class="stat-title">
+
+                            Competitive Games
+
+                        </h3>
+
+                        <p class="stat-text">
+
+                            Seven days packed with action.
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h2 class="stat-number">
+
+                            ₹3500
+
+                        </h2>
+
+                        <h3 class="stat-title">
+
+                            Prize Pool
+
+                        </h3>
+
+                        <p class="stat-text">
+
+                            Cash prizes every single day.
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h2 class="stat-number">
+
+                            100+
+
+                        </h2>
+
+                        <h3 class="stat-title">
+
+                            Participants
+
+                        </h3>
+
+                        <p class="stat-text">
+
+                            Join the biggest gaming week.
+
+                        </p>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <h2 class="stat-number">
+
+                            19-25
+
+                        </h2>
+
+                        <h3 class="stat-title">
+
+                            July 2026
+
+                        </h3>
+
+                        <p class="stat-text">
+
+                            Seven unforgettable days.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- Games -->
+
+        <section class="games-section" id="games">
+
+            <div class="section-heading">
+
+                <div class="badge">
+
+                    Choose Your Battle
+
+                </div>
+
+                <h2 class="section-title">
+
+                    Select Your Games
+
+                </h2>
+
+                <p class="section-subtitle">
+
+                    Register for one or multiple games. Unlock combo discounts,
+                    achievement badges and build your ultimate Gaming Pass.
 
                 </p>
 
             </div>
 
-        </section>
+            <div class="games-grid">
 
+                <!-- Fall Guys -->
 
+                <article class="game-card" data-game="fall-guys" data-price="60">
 
+                    <video autoplay muted loop playsinline class="game-video">
 
+                        <source src="assets/videos/fall-guys.mp4" type="video/mp4">
 
-        <!-- PRIZE -->
+                    </video>
 
-        <section id="prizes">
+                    <div class="game-overlay"></div>
 
-            <h2>
+                    <div class="game-content">
 
-                Prize Pool
+                        <span class="game-date">
 
-            </h2>
+                            19 July
 
-            <h1>
+                        </span>
 
-                ₹3500
+                        <h3>
 
-            </h1>
+                            Fall Guys
 
-        </section>
+                        </h3>
 
+                        <div class="game-details">
 
+                            <span>
 
+                                ₹60 Entry
 
+                            </span>
 
-        <!-- TIMELINE -->
+                            <span>
 
-        <section id="timeline">
+                                Prize ₹500
 
-            <h2>
+                            </span>
 
-                Event Schedule
+                        </div>
 
-            </h2>
+                        <div class="game-slots">
 
-            <div class="timeline">
+                            Slots Left : <strong>100</strong>
+
+                        </div>
+
+                        <button class="add-game-btn">
+
+                            Add To Pass
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Deadshot -->
+
+                <article class="game-card" data-game="deadshot" data-price="60">
+
+                    <video autoplay muted loop playsinline class="game-video">
+
+                        <source src="assets/videos/deadshot.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="game-overlay"></div>
+
+                    <div class="game-content">
+
+                        <span class="game-date">
+
+                            20 July
+
+                        </span>
+
+                        <h3>
+
+                            Deadshot.io
+
+                        </h3>
+
+                        <div class="game-details">
+
+                            <span>₹60 Entry</span>
+
+                            <span>Prize ₹500</span>
+
+                        </div>
+
+                        <div class="game-slots">
+
+                            Slots Left : <strong>100</strong>
+
+                        </div>
+
+                        <button class="add-game-btn">
+
+                            Add To Pass
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- UNO -->
+
+                <article class="game-card" data-game="uno" data-price="60">
+
+                    <video autoplay muted loop playsinline class="game-video">
+
+                        <source src="assets/videos/uno.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="game-overlay"></div>
+
+                    <div class="game-content">
+
+                        <span class="game-date">
+
+                            21 July
+
+                        </span>
+
+                        <h3>
+
+                            UNO
+
+                        </h3>
+
+                        <div class="game-details">
+
+                            <span>₹60 Entry</span>
+
+                            <span>Prize ₹500</span>
+
+                        </div>
+
+                        <div class="game-slots">
+
+                            Slots Left : <strong>100</strong>
+
+                        </div>
+
+                        <button class="add-game-btn">
+
+                            Add To Pass
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Mini Militia -->
+
+                <article class="game-card" data-game="mini-militia" data-price="60">
+
+                    <video autoplay muted loop playsinline class="game-video">
+
+                        <source src="assets/videos/mini-militia.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="game-overlay"></div>
+
+                    <div class="game-content">
+
+                        <span class="game-date">
+
+                            22 July
+
+                        </span>
+
+                        <h3>
+
+                            Mini Militia
+
+                        </h3>
+
+                        <div class="game-details">
+
+                            <span>₹60 Entry</span>
+
+                            <span>Prize ₹500</span>
+
+                        </div>
+
+                        <div class="game-slots">
+
+                            Slots Left : <strong>100</strong>
+
+                        </div>
+
+                        <button class="add-game-btn">
+
+                            Add To Pass
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Chess -->
+
+                <article class="game-card" data-game="chess" data-price="60">
+
+                    <video autoplay muted loop playsinline class="game-video">
+
+                        <source src="assets/videos/chess.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="game-overlay"></div>
+
+                    <div class="game-content">
+
+                        <span class="game-date">
+
+                            23 July
+
+                        </span>
+
+                        <h3>
+
+                            Chess
+
+                        </h3>
+
+                        <div class="game-details">
+
+                            <span>₹60 Entry</span>
+
+                            <span>Prize ₹500</span>
+
+                        </div>
+
+                        <div class="game-slots">
+
+                            Slots Left : <strong>100</strong>
+
+                        </div>
+
+                        <button class="add-game-btn">
+
+                            Add To Pass
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Minecraft -->
+
+                <article class="game-card" data-game="minecraft" data-price="60">
+
+                    <video autoplay muted loop playsinline class="game-video">
+
+                        <source src="assets/videos/minecraft.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="game-overlay"></div>
+
+                    <div class="game-content">
+
+                        <span class="game-date">
+
+                            24 July
+
+                        </span>
+
+                        <h3>
+
+                            Minecraft
+
+                        </h3>
+
+                        <div class="game-details">
+
+                            <span>₹60 Entry</span>
+
+                            <span>Prize ₹500</span>
+
+                        </div>
+
+                        <div class="game-slots">
+
+                            Slots Left : <strong>100</strong>
+
+                        </div>
+
+                        <button class="add-game-btn">
+
+                            Add To Pass
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- BGMI -->
+
+                <article class="game-card" data-game="bgmi" data-price="60">
+
+                    <video autoplay muted loop playsinline class="game-video">
+
+                        <source src="assets/videos/bgmi.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="game-overlay"></div>
+
+                    <div class="game-content">
+
+                        <span class="game-date">
+
+                            25 July
+
+                        </span>
+
+                        <h3>
+
+                            BGMI
+
+                        </h3>
+
+                        <div class="game-details">
+
+                            <span>₹60 Entry</span>
+
+                            <span>Prize ₹500</span>
+
+                        </div>
+
+                        <div class="game-slots">
+
+                            Slots Left : <strong>100</strong>
+
+                        </div>
+
+                        <button class="add-game-btn">
+
+                            Add To Pass
+
+                        </button>
+
+                    </div>
+
+                </article>
 
             </div>
 
         </section>
 
+        <!-- Gaming Pass -->
 
+        <aside class="gaming-pass" id="gamingPass">
 
+            <div class="pass-header">
 
+                <h2>
 
-        <!-- FAQ -->
+                    🎮 Gaming Pass
 
-        <section id="faq">
+                </h2>
 
-            <h2>
+                <button class="close-pass">
 
-                Frequently Asked Questions
+                    <i class="fa-solid fa-xmark"></i>
 
-            </h2>
+                </button>
 
-        </section>
+            </div>
 
+            <div class="selected-games" id="selectedGames">
 
+                <div class="empty-pass">
 
+                    <i class="fa-solid fa-gamepad"></i>
 
+                    <p>
 
-        <!-- CONTACT -->
+                        No games selected yet.
 
-        <section id="contact">
+                    </p>
 
-            <h2>
+                </div>
 
-                Need Help?
+            </div>
 
-            </h2>
+            <div class="pass-summary">
 
-            <a href="https://wa.me/91YOURNUMBER">
+                <div class="summary-row">
 
-                WhatsApp
+                    <span>Subtotal</span>
 
-            </a>
+                    <span id="subtotal">
 
-            <a href="mailto:fernandezallen234@gmail.com">
+                        ₹0
 
-                Email
+                    </span>
 
-            </a>
+                </div>
 
-        </section>
+                <div class="summary-row">
 
+                    <span>Discount</span>
 
+                    <span id="discount">
 
+                        ₹0
 
+                    </span>
 
-        <!-- FOOTER -->
+                </div>
 
-        <footer>
+                <div class="summary-row total">
 
-            © 2026 IEEE Student Branch DYPSST • Arcadia
+                    <span>Total</span>
 
-        </footer>
+                    <span id="totalAmount">
+
+                        ₹0
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="achievement-box" id="achievementBox">
+
+                <span>
+
+                    🎯 Rookie Gamer
+
+                </span>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+
+                Continue Registration
+
+            </button>
+
+        </aside>
+                <!-- Registration Modal -->
+
+        <div class="modal-overlay" id="registrationModal">
+
+            <div class="registration-modal">
+
+                <button class="close-modal" id="closeRegistrationModal">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+                <div class="modal-header">
+
+                    <h2>
+
+                        Complete Your Registration
+
+                    </h2>
+
+                    <p>
+
+                        Fill in your details to continue with payment.
+
+                    </p>
+
+                </div>
+
+                <form id="registrationForm">
+
+                    <div class="input-group">
+
+                        <label for="name">
+
+                            Full Name
+
+                        </label>
+
+                        <input type="text" id="name" required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="phone">
+
+                            Phone Number
+
+                        </label>
+
+                        <input type="tel" id="phone" maxlength="10" required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="email">
+
+                            College Email
+
+                        </label>
+
+                        <input type="email" id="email" required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="college">
+
+                            College Name
+
+                        </label>
+
+                        <input type="text" id="college" value="DYPSST" required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="year">
+
+                            Year of Study
+
+                        </label>
+
+                        <select id="year">
+
+                            <option value="">Select Year</option>
+                            <option>First Year</option>
+                            <option>Second Year</option>
+                            <option>Third Year</option>
+                            <option>Final Year</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="course">
+
+                            Course
+
+                        </label>
+
+                        <input type="text" id="course" required>
+
+                    </div>
+
+                    <div class="selected-summary">
+
+                        <h3>
+
+                            Selected Games
+
+                        </h3>
+
+                        <div id="selectedGamesSummary">
+
+                        </div>
+
+                    </div>
+
+                    <div class="payment-summary">
+
+                        <div>
+
+                            <span>
+
+                                Total Amount
+
+                            </span>
+
+                            <strong id="paymentTotal">
+
+                                ₹0
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="hero-btn">
+
+                        Proceed to Payment
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Payment Success -->
+
+        <div class="modal-overlay" id="successModal">
+
+            <div class="success-modal">
+
+                <div class="success-icon">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <h2>
+
+                    Mission Complete!
+
+                </h2>
+
+                <p>
+
+                    Your registration has been successfully completed.
+
+                </p>
+
+                <div class="success-details">
+
+                    <div>
+
+                        <span>
+
+                            Registration ID
+
+                        </span>
+
+                        <strong id="registrationId">
+
+                            ARC0001
+
+                        </strong>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+
+                            Transaction ID
+
+                        </span>
+
+                        <strong id="transactionId">
+
+                            TXN000000
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="community-card">
+
+                    <h3>
+
+                        Join Our WhatsApp Community
+
+                    </h3>
+
+                    <p>
+
+                        Stay updated with schedules, announcements and event reminders.
+
+                    </p>
+
+                    <a href="https://chat.whatsapp.com/" target="_blank" class="hero-btn">
+
+                        Join Community
+
+                    </a>
+
+                </div>
+
+                <div class="success-buttons">
+
+                    <button class="hero-btn-outline" id="downloadReceipt">
+
+                        Download Receipt
+
+                    </button>
+
+                    <button class="hero-btn" id="backHome">
+
+                        Back To Home
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
-
-
-
-
-
-    <!-- JAVASCRIPT -->
 
     <script src="js/app.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/animations.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/gamingPass.js"></script>
+    <script src="js/discount.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/particles.js"></script>
 
 </body>
 
